@@ -1,6 +1,3 @@
-a {
-    color: #777;
-}
 a:link {
     text-decoration: none;
 }
@@ -16,7 +13,8 @@ hr {
     border-color: lightgrey;
     border-width: 1px;
 }
-#aboutMe {
+#aboutMe,
+#portfolio {
     background: #ffffff;
     border: solid;
     border-color: lightgray;
@@ -25,17 +23,17 @@ hr {
     margin: auto;
     overflow: auto;
     padding: 10px 20px 20px 20px;
-    /* position: relative; */
     width: 920px;
 }
-#aboutMeHeader {
+#aboutMeHeader,
+#portfolioHeader {
     color: #4aaaa5;
     font-family: Georgia, Times, Times New Roman, serif;
     font-size: 26px;
     font-weight: bold;
     line-height: 60px;
 }
-#Image {
+#aboutMeImg {
     float: left;
     padding-right: 20px;
 }
@@ -46,11 +44,18 @@ hr {
     width: 225px;
     word-spacing: 10px;
 }
+#links a {
+    color: #777;
+}
+#links a:hover {
+    color: #4aaaa5;
+}
 #logo {
     background: #4aaaa5;
     float: left;
     height: 75px;
-    width: 225px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 #logoHeader {
     color: white;
@@ -67,9 +72,39 @@ hr {
     border-width: 1px;
     height: 75px;
     margin: 0;
-    text-align: center;
 }
 #navContent {
     margin: 0 auto;
     width: 960px;
+}
+.imageLabelBox{
+    background: #4aaaa5;
+    color: #ffffff;
+    line-height: 40px; /* Centering text vertically */
+    text-align: center;
+    width: 300px;
+}
+.imageLabel1{
+    color: #ffffff;
+    position: absolute;
+    top: 150px;
+}
+.imageLabel2{
+    left: 320px;
+    position: absolute;
+    top: 150px;
+}
+.images {
+    float: left;
+    height:200px;
+    padding-right: 20px;
+    width: 300px;
+}
+.portfolioRow {
+    clear: both;
+    overflow: auto;
+    position: relative;
+}
+.portfolioRow a img:hover {
+    opacity: 0.3;
 }

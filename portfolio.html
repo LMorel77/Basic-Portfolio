@@ -11,26 +11,63 @@
 </head>
 
 <body>
-    <nav>
-        <header>
-            <h1 id="NAMEHD">My Name Header</h1>
-        </header>
-        <section>
-            <a href="index.html">About</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
-        </section>
+    <nav id="navBar">
+        <div id="navContent">
+            <div id="logo">
+                <h1 id="logoHeader">Luis Morel</h1>
+            </div>
+            <div id="links">
+                <a href="index.html">About</a> |
+                <a href="portfolio.html">Portfolio</a> |
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
     </nav>
-    <div class="portfolio">
-        <br>
-        <h2>Portfolio Header</h2>
+    <br>
+
+    <div id="portfolio">
+        <h1 id="portfolioHeader">Portfolio</h1>
         <hr>
-        <a id="plink1" href="#"><img src="assets/images/Cats01.jpg" alt=PortfolioImage1></a>
-        <a id="plink2" href="#"><img src="assets/images/Cats02.jpg" alt=PortfolioImage2></a>
-        <a id="plink3" href="#"><img src="assets/images/Cats03.jpg" alt=PortfolioImage3></a>
-        <a id="plink4" href="#"><img src="assets/images/Cats05.jpg" alt=PortfolioImage4></a>
-        <a id="plink5" href="#"><img src="assets/images/Cats06.jpg" alt=PortfolioImage5></a>
-        <a id="plink6" href="#"><img src="assets/images/Cats07.jpg" alt=PortfolioImage6></a>
+        <br>
+        <div class="portfolioRow">
+            <a href="#">
+                <img class="images" src="assets/images/Cats01.jpg" alt=PortfolioImage1>
+            </a>
+            <div class="imageLabelBox imageLabel1">
+                Wise Cat
+            </div>
+            <a href="#">
+                <img class="images" src="assets/images/Cats02.jpg" alt=PortfolioImage2>
+            </a>
+            <div class="imageLabelBox imageLabel2">
+                Neighborly Cat
+            </div>
+        </div>
+        <br>
+        <div class="portfolioRow">
+            <a href="#">
+                <img class="images" src="assets/images/Cats03.jpg" alt=PortfolioImage3>
+            </a>
+            <div class="imageLabelBox imageLabel1">
+                Irritated Cat
+            </div>
+            <a href="#">
+                <img class="images" src="assets/images/Cats05.jpg" alt=PortfolioImage4>
+            </a>
+            <div class="imageLabelBox imageLabel2">
+                Travel Cat
+            </div>
+        </div>
+        <br>
+        <div class="portfolioRow">
+            <a href="#">
+                <img class="images" src="assets/images/Cats06.jpg" alt=PortfolioImage5>
+            </a>
+            <div class="imageLabelBox imageLabel1">
+                Perplexed Cat
+            </div>
+
+        </div>
     </div>
 
 </body>
