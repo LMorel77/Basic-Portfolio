@@ -11,35 +11,68 @@
 </head>
 
 <body>
-    <nav>
-        <header>
-            <h1 id="NAMEHD">My Name Header</h1>
-        </header>
-        <section>
-            <a href="index.html">About</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
-        </section>
+    <nav id="navBar">
+        <div id="navContent">
+            <div id="logo">
+                <h1 id="logoHeader">Luis Morel</h1>
+            </div>
+            <div id="links">
+                <a href="index.html">About</a> |
+                <a href="portfolio.html">Portfolio</a> |
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
     </nav>
-    <div class="contact">
-        <br>
-        <h2>Contact Header</h2>
-        <hr>
-        <p>Name Label</p>
-        <p>Name Text Box</p>
-        <p>Email Label</p>
-        <p>Email Text Box</p>
-        <p>Message Label</p>
-        <p>Messabe Text Box</p>
-        <button type="button">Submit Button</button>
+    <br>
+    <div id="contactFormWrapper">
+        <div id="contactForm">
+            <h1 id="contactFormHeader">Contact</h1>
+            <hr>
+            <br>
+            <!--<form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Enter Your First Name Here">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Enter Your Last Name Here">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Enter Your Email Address Here">
+                <label for="message">Message</label>
+                <input type="text" id="message" name="message" placeholder="Enter Your Message Here">
+                <input type="submit" value="Submit">
+            </form>-->
+            <form action="mailto:lmorel77@aol.com?subject=Portfolio%20Contact%20Form%20Submission" method="post" enctype="text/plain">
+                First Name:<br><input type="text" name="First Name " placeholder="Enter Your First Name Here">
+                Last Name:<br><input type="text" name="Last Name" placeholder="Enter Your Last Name Here">
+                Email:<br><input type="text" name="Email " placeholder="Enter Your Email Address Here">
+                Message:<br><textarea id="subject" name="Subject " placeholder="Write Your Message Here"></textarea>
+                <!-- Message:<br><input id="contactFormMessage" type="text" name="Message " placeholder="Enter Your Message Here"> -->
+                <br><br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </div>
+        <div id="socialMediaPanel">
+            <h1 id="socialMediaPanelHeader">Connect With Me</h1>
+            <hr>
+            <!-- <br> -->
+            <div id="socialMediaPanelLinks">
+                <a href="https://github.com" target="_blank">
+                    <img src="assets/images/github48.png" alt=SocialLink1>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <img src="assets/images/linkedin48.png" alt=SocialLink2>
+                </a>
+                <a href="https://stackoverflow.com" target="_blank">
+                    <img src="assets/images/stackoverflow48.png" alt=SocialLink3>
+                </a>
+            </div>
+        </div>
     </div>
-    <div class="connect">
-        <h3>Connect with Me Header</h3>
-        <hr>
-        <a id="slink1" href="#"><img src="assets/images/github48.png" alt=SocialLink1></a>
-        <a id="slink2" href="#"><img src="assets/images/linkedin48.png" alt=SocialLink2></a>
-        <a id="slink3" href="#"><img src="assets/images/stackoverflow48.png" alt=SocialLink3></a>
-    </div>
+    <br>
+
+    <footer class="pagefooter">
+        <a href="index.html">Copyright &copy; 2018 Luis Morel</a>
+    </footer>
 
 </body>
 
